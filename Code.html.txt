@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reach 360 - Digital Marketing</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      color: white;
+      text-align: center;
+    }
+    header {
+      padding: 50px 20px;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+    footer {
+      background: rgba(0,0,0,0.3);
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Reach 360</h1>
+    <p>Your Trusted Partner in Social Media & Digital Marketing</p>
+  </header>
+
+  <main>
+    <p>We help businesses grow with smart digital strategies, creative content, and 360° marketing solutions.</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Reach 360. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
