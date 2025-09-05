@@ -1,14 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Reach360 Website</title>
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  </head>
-  <body class="bg-gray-50 text-gray-900">
-    <div id="root"></div>
-    <!-- keep /src/main.jsx so Vite replaces it during build -->
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reach 360 - Digital Marketing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1117;
+            color: #c9d1d9;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Hero Section -->
+    <header class="bg-gray-900 shadow-md">
+        <div class="container mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center">
+            <h1 class="text-3xl font-bold text-white tracking-wide mb-4 md:mb-0">REACH 360</h1>
+            <nav class="space-x-4">
+                <a href="#about" class="text-gray-300 hover:text-white transition duration-300">About</a>
+                <a href="#services" class="text-gray-300 hover:text-white transition duration-300">Services</a>
+                <a href="#tiers" class="text-gray-300 hover:text-white transition duration-300">Our Tiers</a>
+                <a href="#contact" class="px-4 py-2 bg-purple-600 text-white font-medium rounded-full hover:bg-purple-700 transition duration-300">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="relative bg-cover bg-center h-screen flex items-center justify-center text-center p-4" style="background-image: url('https://placehold.co/1920x1080/0d1117/c9d1d9?text=REACH+360');">
+            <div class="absolute inset-0 bg-black opacity-60"></div>
+            <div class="relative z-10 max-w-2xl">
+                <h2 class="text-5xl md:text-6xl font-extrabold text-white mb-4 leading-tight">LET'S TURN CLICKS INTO CLIENTS</h2>
+                <p class="text-xl text-gray-300 mb-8">We don't just post content - we build brands.</p>
+                <a href="#contact" class="px-8 py-4 bg-purple-600 text-white font-bold rounded-full text-lg hover:bg-purple-700 transition duration-300 transform hover:scale-105">GROW TOGETHER</a>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-20 px-4 bg-gray-900">
+            <div class="container mx-auto max-w-4xl">
+                <h3 class="text-4xl font-bold text-center text-white mb-12">About Us</h3>
+                <div class="space-y-12 md:space-y-0 md:grid md:grid-cols-3 md:gap-8 text-center mb-12">
+                    <div class="p-6 rounded-lg bg-gray-800 shadow-xl transform transition duration-500 hover:scale-105">
+                        <h4 class="text-2xl font-semibold text-purple-400 mb-4">Our History</h4>
+                        <p class="text-gray-300">Our digital media journey began in 2016 as a freelance service. In 2025, this vision evolved into Reach 360 - a full-fledged digital marketing company.</p>
+                    </div>
+                    <div class="p-6 rounded-lg bg-gray-800 shadow-xl transform transition duration-500 hover:scale-105">
+                        <h4 class="text-2xl font-semibold text-purple-400 mb-4">Why Us</h4>
+                        <p class="text-gray-300">We are a team of young, passionate talents bringing fresh ideas to the digital world, crafting strategies that deliver real, measurable results.</p>
+                    </div>
+                    <div class="p-6 rounded-lg bg-gray-800 shadow-xl transform transition duration-500 hover:scale-105">
+                        <h4 class="text-2xl font-semibold text-purple-400 mb-4">Our Mission</h4>
+                        <p class="text-gray-300">To help businesses adapt to the ever-changing marketing landscape and achieve their full revenue potential with effective digital strategies.</p>
+                    </div>
+                </div>
+
+                <!-- New "Meet the Founder" Section with Image -->
+                <div class="p-8 rounded-xl bg-gray-800 shadow-xl border-t-4 border-purple-600 flex flex-col md:flex-row items-center md:items-start space-y-8 md:space-y-0 md:space-x-8">
+                    <!-- Image Box on the left -->
+                    <div class="flex-shrink-0 w-full md:w-1/3">
+                        <img src="https://placehold.co/400x600/1e293b/c9d1d9?text=Kailash+Vicky" alt="Kailash Vicky, Founder of Reach 360" class="rounded-lg shadow-lg w-full h-auto">
+                    </div>
+                    <!-- Text Box on the right -->
+                    <div class="flex-grow">
+                        <h4 class="text-3xl font-semibold text-white mb-4 text-center md:text-left">Meet the Founder - Kailash Vicky</h4>
+                        <p class="text-gray-300 text-center md:text-left">With over six years of media industry experience as a prime-time RJ and Social Media Manager, Kailash brings a wealth of knowledge in content creation, brand campaigns, and commercial production. He has organically grown his personal and business brands to over 600K+ combined followers across Instagram, YouTube, and Facebook. His passion lies in effective storytelling and building authentic connections that transform audiences into loyal communities.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 px-4 bg-gray-800">
+            <div class="container mx-auto max-w-6xl">
+                <h3 class="text-4xl font-bold text-center text-white mb-12">Our Services</h3>
+                <div class="space-y-12">
+                    <!-- Social Media Management -->
+                    <div class="flex flex-col md:flex-row items-center bg-gray-900 p-8 rounded-xl shadow-xl space-y-8 md:space-y-0 md:space-x-8">
+                        <div class="md:w-1/2">
+                            <h4 class="text-3xl font-semibold text-purple-400 mb-4">Social Media Management</h4>
+                            <ul class="list-disc list-inside space-y-2 text-gray-300">
+                                <li>Content creation from strategy to visuals</li>
+                                <li>Social media management (reels, stories, daily posts)</li>
+                                <li>Scriptwriting & creative ideation</li>
+                                <li>Audience engagement (responding, interacting, growing organically)</li>
+                                <li>Video production (shooting & editing)</li>
+                            </ul>
+                        </div>
+                        <div class="md:w-1/2">
+                            <img src="https://placehold.co/600x400/1e293b/c9d1d9?text=Social+Media" alt="Social Media Management" class="rounded-lg shadow-lg w-full">
+                        </div>
+                    </div>
+                    <!-- Influencer Marketing -->
+                    <div class="flex flex-col md:flex-row-reverse items-center bg-gray-900 p-8 rounded-xl shadow-xl space-y-8 md:space-y-0 md:space-x-8 md:space-x-reverse">
+                        <div class="md:w-1/2">
+                            <h4 class="text-3xl font-semibold text-purple-400 mb-4">Influencer Marketing</h4>
+                            <p class="text-gray-300 mb-4">We have a ready network of trusted influencers across different niches. Our team can quickly activate influencers who match your brand to boost visibility and trust.</p>
+                            <ul class="list-disc list-inside space-y-2 text-gray-300">
+                                <li>Influencers act as brand advocates, building trust and driving engagement.</li>
+                                <li>We create trusted review videos and collaborations to attract a targeted audience.</li>
+                                <li>We select niche-based influencers to ensure your product reaches the right audience, increasing conversions.</li>
+                            </ul>
+                        </div>
+                        <div class="md:w-1/2">
+                            <img src="https://placehold.co/600x400/1e293b/c9d1d9?text=Influencer+Marketing" alt="Influencer Marketing" class="rounded-lg shadow-lg w-full">
+                        </div>
+                    </div>
+                    <!-- Website Development -->
+                    <div class="flex flex-col md:flex-row items-center bg-gray-900 p-8 rounded-xl shadow-xl space-y-8 md:space-y-0 md:space-x-8">
+                        <div class="md:w-1/2">
+                            <h4 class="text-3xl font-semibold text-purple-400 mb-4">Website Development & Lead Generation</h4>
+                            <ul class="list-disc list-inside space-y-2 text-gray-300">
+                                <li>We design and develop responsive, visually appealing websites that reflect your brand.</li>
+                                <li>We create targeted campaigns using landing pages, ads, and automation tools.</li>
+                                <li>Our goal is to attract, capture, and convert high-quality leads for your business.</li>
+                            </ul>
+                        </div>
+                        <div class="md:w-1/2">
+                            <img src="https://placehold.co/600x400/1e293b/c9d1d9?text=Website+Development" alt="Website Development" class="rounded-lg shadow-lg w-full">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tiers Section -->
+        <section id="tiers" class="py-20 px-4 bg-gray-900">
+            <div class="container mx-auto max-w-6xl">
+                <h3 class="text-4xl font-bold text-center text-white mb-12">Our Tiers</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Tier 1 -->
+                    <div class="p-8 bg-gray-800 rounded-xl shadow-xl text-center transform transition duration-500 hover:scale-105 border-t-4 border-purple-600">
+                        <h4 class="text-3xl font-bold text-white mb-4">Tier 1</h4>
+                        <p class="text-purple-400 mb-6">Perfect for startups and individuals</p>
+                        <ul class="space-y-3 text-gray-300 text-left">
+                            <li>- Organic content creation</li>
+                            <li>- Basic video shoot & edit</li>
+                            <li>- Daily social media management</li>
+                            <li>- Regular reels, stories, and posts</li>
+                        </ul>
+                    </div>
+                    <!-- Tier 2 -->
+                    <div class="p-8 bg-gray-800 rounded-xl shadow-xl text-center transform transition duration-500 hover:scale-105 border-t-4 border-purple-600">
+                        <h4 class="text-3xl font-bold text-white mb-4">Tier 2</h4>
+                        <p class="text-purple-400 mb-6">Ideal for growing businesses</p>
+                        <ul class="space-y-3 text-gray-300 text-left">
+                            <li>- All Tier 1 benefits</li>
+                            <li>- Pro camera shoots & editing</li>
+                            <li>- Logo & custom thumbnail design</li>
+                            <li>- Influencer collaboration management</li>
+                            <li>- Unique story-driven content</li>
+                            <li>- AI auto-replies + comment tools</li>
+                            <li>- Basic lead generation support</li>
+                        </ul>
+                    </div>
+                    <!-- Tier 3 -->
+                    <div class="p-8 bg-gray-800 rounded-xl shadow-xl text-center transform transition duration-500 hover:scale-105 border-t-4 border-purple-600">
+                        <h4 class="text-3xl font-bold text-white mb-4">Tier 3</h4>
+                        <p class="text-purple-400 mb-6">Designed for established brands</p>
+                        <ul class="space-y-3 text-gray-300 text-left">
+                            <li>- All Tier 1 & 2 benefits</li>
+                            <li>- Cinematic video production</li>
+                            <li>- Weekly trend-based brand review</li>
+                            <li>- AI chat automation for advanced DMs</li>
+                            <li>- Full influencer management</li>
+                            <li>- Personalized lead generation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 px-4 bg-gray-800">
+            <div class="container mx-auto max-w-4xl text-center">
+                <h3 class="text-4xl font-bold text-white mb-4">Let's Grow Together</h3>
+                <p class="text-gray-300 text-lg mb-8">In today's digital world, if you're not seen online, you don't exist.</p>
+                <div class="space-y-4">
+                    <p class="text-2xl font-bold text-purple-400">Phone: 94433 94439</p>
+                    <p class="text-2xl font-bold text-purple-400">Email: reach360d@gmail.com</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-6 text-center">
+        <p class="text-gray-500">© 2025 Reach 360. All rights reserved.</p>
+    </footer>
+
+</body>
 </html>
