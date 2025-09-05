@@ -10,31 +10,24 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #0d1117;
-            color: #c9d1d9;
+            background-color: #0b0f1c; /* Darker background */
+            color: #d1d5db; /* Lighter text for contrast */
         }
 
         .gradient-bg {
-            background: linear-gradient(180deg, #1f2a37, #111827);
+            background: linear-gradient(180deg, #121827, #0b0f1c); /* Subtle gradient for sections */
         }
 
         .card-bg {
-            background-color: #1a202c;
+            background-color: #1a202c; /* Darker card background */
         }
 
-        .hero-title {
-            animation: text-pop-up 0.5s ease-out;
+        .accent-color {
+            color: #6366f1; /* A more vibrant, subtle purple-blue */
         }
 
-        @keyframes text-pop-up {
-            0% {
-                transform: translateY(20px);
-                opacity: 0;
-            }
-            100% {
-                transform: translateY(0);
-                opacity: 1;
-            }
+        .accent-bg {
+            background-color: #6366f1; /* Vibrant background for buttons */
         }
     </style>
 </head>
@@ -56,10 +49,10 @@
     <main>
         <section class="relative bg-black h-screen flex items-center justify-center text-center p-4">
             <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover">
-                <source src="https://github.com/reach360d-hash/Reach360-ebsite/blob/main/Logo_Animation_Request_and_Generation.mp4?raw=true" type="video/mp4">
+                <source src="https://github.com/reach360d-hash/Reach360-ebsite/blob/main/Gradient-background.mp4?raw=true" type="video/mp4">
             </video>
             <div class="absolute inset-0 bg-black opacity-60"></div>
-            <div class="relative z-10 max-w-2xl hero-title">
+            <div class="relative z-10 max-w-2xl" data-aos="zoom-in" data-aos-duration="1500">
                 <h2 class="text-5xl md:text-6xl font-extrabold text-white mb-4 leading-tight">LET'S TURN CLICKS INTO CLIENTS</h2>
                 <p class="text-xl text-gray-300 mb-8">We don't just post content - we build brands.</p>
                 <a href="#contact" class="px-8 py-4 bg-purple-600 text-white font-bold rounded-full text-lg hover:bg-purple-700 transition duration-300 transform hover:scale-105">GROW TOGETHER</a>
@@ -72,15 +65,15 @@
                 <h3 class="text-4xl font-bold text-center text-white mb-12" data-aos="fade-up" data-aos-duration="1000">About Us</h3>
                 <div class="space-y-12 md:space-y-0 md:grid md:grid-cols-3 md:gap-8 text-center mb-12">
                     <div class="p-6 rounded-lg card-bg shadow-xl transform transition duration-500 hover:scale-105" data-aos="fade-up" data-aos-duration="1000">
-                        <h4 class="text-2xl font-semibold text-purple-400 mb-4">Our History</h4>
+                        <h4 class="text-2xl font-semibold accent-color mb-4">Our History</h4>
                         <p class="text-gray-300">Our digital media journey began in 2016 as a freelance service. In 2025, this vision evolved into Reach 360 - a full-fledged digital marketing company.</p>
                     </div>
                     <div class="p-6 rounded-lg card-bg shadow-xl transform transition duration-500 hover:scale-105" data-aos="fade-up" data-aos-duration="1200">
-                        <h4 class="text-2xl font-semibold text-purple-400 mb-4">Why Us</h4>
+                        <h4 class="text-2xl font-semibold accent-color mb-4">Why Us</h4>
                         <p class="text-gray-300">We are a team of young, passionate talents bringing fresh ideas to the digital world, crafting strategies that deliver real, measurable results.</p>
                     </div>
                     <div class="p-6 rounded-lg card-bg shadow-xl transform transition duration-500 hover:scale-105" data-aos="fade-up" data-aos-duration="1400">
-                        <h4 class="text-2xl font-semibold text-purple-400 mb-4">Our Mission</h4>
+                        <h4 class="text-2xl font-semibold accent-color mb-4">Our Mission</h4>
                         <p class="text-gray-300">To help businesses adapt to the ever-changing marketing landscape and achieve their full revenue potential with effective digital strategies.</p>
                     </div>
                 </div>
@@ -113,9 +106,9 @@
                 <h3 class="text-4xl font-bold text-center text-white mb-12" data-aos="fade-up" data-aos-duration="1000">Our Services</h3>
                 <div class="space-y-12">
                     <!-- Social Media Management -->
-                    <div class="flex flex-col md:flex-row items-center bg-gray-900 p-8 rounded-xl shadow-xl space-y-8 md:space-y-0 md:space-x-8" data-aos="fade-right" data-aos-duration="1500">
+                    <div class="flex flex-col md:flex-row items-center card-bg p-8 rounded-xl shadow-xl space-y-8 md:space-y-0 md:space-x-8" data-aos="fade-right" data-aos-duration="1500">
                         <div class="md:w-1/2">
-                            <h4 class="text-3xl font-semibold text-purple-400 mb-4">Social Media Management</h4>
+                            <h4 class="text-3xl font-semibold accent-color mb-4">Social Media Management</h4>
                             <ul class="list-disc list-inside space-y-2 text-gray-300">
                                 <li>Content creation from strategy to visuals</li>
                                 <li>Social media management (reels, stories, daily posts)</li>
@@ -129,9 +122,9 @@
                         </div>
                     </div>
                     <!-- Influencer Marketing -->
-                    <div class="flex flex-col md:flex-row-reverse items-center bg-gray-900 p-8 rounded-xl shadow-xl space-y-8 md:space-y-0 md:space-x-8 md:space-x-reverse" data-aos="fade-left" data-aos-duration="1500">
+                    <div class="flex flex-col md:flex-row-reverse items-center card-bg p-8 rounded-xl shadow-xl space-y-8 md:space-y-0 md:space-x-8 md:space-x-reverse" data-aos="fade-left" data-aos-duration="1500">
                         <div class="md:w-1/2">
-                            <h4 class="text-3xl font-semibold text-purple-400 mb-4">Influencer Marketing</h4>
+                            <h4 class="text-3xl font-semibold accent-color mb-4">Influencer Marketing</h4>
                             <p class="text-gray-300 mb-4">We have a ready network of trusted influencers across different niches. Our team can quickly activate influencers who match your brand to boost visibility and trust.</p>
                             <ul class="list-disc list-inside space-y-2 text-gray-300">
                                 <li>Influencers act as brand advocates, building trust and driving engagement.</li>
@@ -144,9 +137,9 @@
                         </div>
                     </div>
                     <!-- Website Development -->
-                    <div class="flex flex-col md:flex-row items-center bg-gray-900 p-8 rounded-xl shadow-xl space-y-8 md:space-y-0 md:space-x-8" data-aos="fade-right" data-aos-duration="1500">
+                    <div class="flex flex-col md:flex-row items-center card-bg p-8 rounded-xl shadow-xl space-y-8 md:space-y-0 md:space-x-8" data-aos="fade-right" data-aos-duration="1500">
                         <div class="md:w-1/2">
-                            <h4 class="text-3xl font-semibold text-purple-400 mb-4">Website Development & Lead Generation</h4>
+                            <h4 class="text-3xl font-semibold accent-color mb-4">Website Development & Lead Generation</h4>
                             <ul class="list-disc list-inside space-y-2 text-gray-300">
                                 <li>We design and develop responsive, visually appealing websites that reflect your brand.</li>
                                 <li>We create targeted campaigns using landing pages, ads, and automation tools.</li>
@@ -162,14 +155,14 @@
         </section>
 
         <!-- Tiers Section -->
-        <section id="tiers" class="py-20 px-4 bg-gray-900">
+        <section id="tiers" class="py-20 px-4 gradient-bg">
             <div class="container mx-auto max-w-6xl">
                 <h3 class="text-4xl font-bold text-center text-white mb-12" data-aos="fade-up" data-aos-duration="1000">Our Tiers</h3>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <!-- Tier 1 -->
                     <div class="p-8 card-bg rounded-xl shadow-xl text-center transform transition duration-500 hover:scale-105" data-aos="fade-up" data-aos-duration="1500">
                         <h4 class="text-3xl font-bold text-white mb-4">Tier 1</h4>
-                        <p class="text-purple-400 mb-6">Perfect for startups and individuals</p>
+                        <p class="accent-color mb-6">Perfect for startups and individuals</p>
                         <ul class="space-y-3 text-gray-300 text-left">
                             <li>- Organic content creation</li>
                             <li>- Basic video shoot & edit</li>
@@ -180,7 +173,7 @@
                     <!-- Tier 2 -->
                     <div class="p-8 card-bg rounded-xl shadow-xl text-center transform transition duration-500 hover:scale-105" data-aos="fade-up" data-aos-duration="1700">
                         <h4 class="text-3xl font-bold text-white mb-4">Tier 2</h4>
-                        <p class="text-purple-400 mb-6">Ideal for growing businesses</p>
+                        <p class="accent-color mb-6">Ideal for growing businesses</p>
                         <ul class="space-y-3 text-gray-300 text-left">
                             <li>- All Tier 1 benefits</li>
                             <li>- Pro camera shoots & editing</li>
@@ -194,7 +187,7 @@
                     <!-- Tier 3 -->
                     <div class="p-8 card-bg rounded-xl shadow-xl text-center transform transition duration-500 hover:scale-105" data-aos="fade-up" data-aos-duration="1900">
                         <h4 class="text-3xl font-bold text-white mb-4">Tier 3</h4>
-                        <p class="text-purple-400 mb-6">Designed for established brands</p>
+                        <p class="accent-color mb-6">Designed for established brands</p>
                         <ul class="space-y-3 text-gray-300 text-left">
                             <li>- All Tier 1 & 2 benefits</li>
                             <li>- Cinematic video production</li>
@@ -214,8 +207,8 @@
                 <h3 class="text-4xl font-bold text-white mb-4">Let's Grow Together</h3>
                 <p class="text-gray-300 text-lg mb-8">In today's digital world, if you're not seen online, you don't exist.</p>
                 <div class="space-y-4">
-                    <p class="text-2xl font-bold text-purple-400">Phone: 94433 94439</p>
-                    <p class="text-2xl font-bold text-purple-400">Email: reach360d@gmail.com</p>
+                    <p class="text-2xl font-bold accent-color">Phone: 94433 94439</p>
+                    <p class="text-2xl font-bold accent-color">Email: reach360d@gmail.com</p>
                 </div>
             </div>
         </section>
