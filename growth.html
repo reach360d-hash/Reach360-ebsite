@@ -16,8 +16,8 @@
 
   <!-- Delight Font -->
   <style>
-    @font-face{font-family:"Delight";src:url("delight-font-family/delight-black.woff2") format("woff2"),url("delight-font-family/delight-black.woff") format("woff"),url("delight-font-family/delight-black.ttf") format("truetype");font-weight:900;font-style:normal;font-display:swap}
-    @font-face{font-family:"Delight";src:url("delight-font-family/delight-bold.woff2") format("woff2"),url("delight-font-family/delight-bold.woff") format("woff"),url("delight-font-family/delight-bold.ttf") format("truetype");font-weight:700;font-style:normal;font-display:swap}
+    @font-face{font-family:"Delight";src:url("delight-black.woff2") format("woff2"),url("delight-font-family/delight-black.woff") format("woff"),url("delight-font-family/delight-black.otf") format("opentype");font-weight:900;font-style:normal;font-display:swap}
+    @font-face{font-family:"Delight";src:url("delight-bold.woff2") format("woff2"),url("delight-font-family/delight-bold.woff") format("woff"),url("delight-font-family/delight-bold.otf") format("opentype");font-weight:700;font-style:normal;font-display:swap}
   </style>
 
   <!-- Poppins -->
@@ -416,7 +416,7 @@ footer a:hover{color:var(--brand)}
     <div class="service-grid">
       <article class="service-card primary reveal">
         <div class="service-media">
-          <img src="images/photoshoot.jpeg" alt="Video production camera setup" loading="lazy">
+          <img src="photoshoot.jpeg" alt="Video production camera setup" loading="lazy">
         </div>
         <div class="service-copy">
           <span class="rank">Priority 01</span>
@@ -433,7 +433,7 @@ footer a:hover{color:var(--brand)}
       <article class="service-card reverse reveal reveal-d1">
         <div class="service-media">
           <!-- Fixed: replaced Netflix-style image with proper social/Meta ads visual -->
-          <img src="images/meta.jpeg" loading="lazy">
+          <img src="meta.jpeg" loading="lazy">
         </div>
         <div class="service-copy">
           <span class="rank">Priority 02</span>
@@ -648,7 +648,7 @@ footer a:hover{color:var(--brand)}
 })();
 
 /* Videos */
-const videoItems=["videos/reel-01.mp4","videos/reel-02.mp4","videos/reel-03.mp4","videos/reel-04.mp4","videos/reel-05.mp4","videos/reel-06.mp4","videos/reel-07.mp4","videos/reel-08.mp4"];
+const videoItems=["reel-01.mp4","reel-02.mp4","reel-03.mp4","reel-04.mp4","reel-05.mp4","reel-06.mp4","reel-07.mp4"];
 let videoSlideIndex=0;
 function renderVideos(){
   const track=document.getElementById("videoTrack");
@@ -662,13 +662,13 @@ function playShort(i){videoSlideIndex=i;renderVideos()}
 
 /* Achievements — Achievements/1.png to 7.png */
 const achievementItems=[
-  {title:"100+ Happy Clients",text:"Growth campaigns across local and service businesses.",image:"Achievements/1.png"},
-  {title:"500+ Videos Produced",text:"Reels, shorts, founder stories, and campaign creatives.",image:"Achievements/2.png"},
-  {title:"Viral Reach Campaigns",text:"Content planned around hooks, retention, and sharing.",image:"Achievements/3.png"},
-  {title:"Meta Lead Campaigns",text:"Facebook and Instagram funnels built for enquiries.",image:"Achievements/4.png"},
-  {title:"Google Search Leads",text:"High-intent traffic for service-based businesses.",image:"Achievements/5.png"},
-  {title:"Founder Brand Shoots",text:"Personal brand visuals for trust and authority.",image:"Achievements/6.png"},
-  {title:"Business Growth",text:"Organic reach supported by conversion-focused ads.",image:"Achievements/7.png"}
+  {title:"100+ Happy Clients",text:"Growth campaigns across local and service businesses.",image:"1.png"},
+  {title:"500+ Videos Produced",text:"Reels, shorts, founder stories, and campaign creatives.",image:"2.png"},
+  {title:"Viral Reach Campaigns",text:"Content planned around hooks, retention, and sharing.",image:"3.png"},
+  {title:"Meta Lead Campaigns",text:"Facebook and Instagram funnels built for enquiries.",image:"4.png"},
+  {title:"Google Search Leads",text:"High-intent traffic for service-based businesses.",image:"5.png"},
+  {title:"Founder Brand Shoots",text:"Personal brand visuals for trust and authority.",image:"6.png"},
+  {title:"Business Growth",text:"Organic reach supported by conversion-focused ads.",image:"7.png"}
 ];
 function duplicate(a){return[...a,...a]}
 function renderAchievements(){
